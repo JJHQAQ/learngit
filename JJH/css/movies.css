@@ -1,0 +1,50 @@
+.videobox{
+    position: absolute;
+    width: 50%;
+    height: 60%;
+    /* border: 1px solid red; */
+    left:25%;
+    top:10%;
+    border-radius: 25px;
+    background-color: rgba(0,0,0,0.6);
+    box-shadow: 0 0 25px black;
+}
+.videobox #video{
+    margin: 5% auto;
+    display: block;
+    width: 70%;
+}
+.music-play{
+    height: 36px;
+    border: solid;
+    box-shadow: 0 0 0 0 25px rgba(0,0,0,0.6);
+    border-color: transparent transparent transparent white;
+    border-width: 18px 0px 18px 32px;
+    background-color: transparent;
+    padding: 0;
+    box-sizing: border-box;
+    position: absolute;
+    left:15%;
+    transition: 0.3s all; 
+}
+.music-play:hover{
+    border-style: double;
+    border-width: 0px 0px 0px 32px;
+}
+.music-pause{
+    height: 36px;
+    border: solid;
+    border-color: transparent transparent transparent white;
+    border-width: 0px 0px 0px 32px;
+    background-color: transparent;
+    border-style: double;
+    padding: 0;
+    box-sizing: border-box;
+    position: absolute;
+    left:80%;
+    transition: 0.3s all; 
+}
+.music-pause:hover{
+    border-style: solid;
+    border-width: 18px 0px 18px 32px;
+}

@@ -1,0 +1,23 @@
+
+#linkid a{
+    color: white;
+    text-decoration: none;
+    transition: 0.3s all;
+}
+#linkid a:hover{
+    color: turquoise;
+}
+#linkid p{
+    line-height: 15px;
+}
+.div3{
+    background-color: rgba(0,0,0,0.6);
+    margin: 0 auto;
+    box-shadow: 0px 15px 25px 0 rgba(0,0,0,.6);
+    box-sizing: border-box;
+    width:50%;
+    height:30%;
+    padding-top: 15px;
+    padding-left: 10px;
+    
+ }

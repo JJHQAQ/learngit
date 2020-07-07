@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <link rel = "stylesheet" type="text/css" href="css/index.css">
+        <script src="js/jquery-3.5.1.min.js"></script>
+        <script src="js/JJH.js"></script>
+        <script src="js/about_me.js"></script>
+        <title>JJH's web</title>
+        <link rel="icon" href="img/pic.ico" type="image/x-icon">
+        <style type="text/css">
+        .gun{
+            background-color: rgba(0,0,0,0.7);
+            border-radius: 15px;
+            width: 80%;
+            height: 20%;
+            /* border: 1px solid red; */
+            margin: 0 auto;
+            overflow: hidden;
+            padding-top: 0;
+        }
+        .gun .dong{
+            position: relative;
+            white-space: nowrap;
+            display: inline-block;
+            padding-top: 0;
+            top:0;
+            color: white;
+            line-height: 23px;
+            font-size: 1.5em;
+            animation: gundong 15s linear infinite;
+        }
+        @keyframes gundong {
+            from{
+                transform: translateX(200px);
+            }
+            to{
+                transform: translateX(-100%);
+            }
+        }
+        </style>
+    </head>
+<body >
+    <div class="sidenav" id="Side">
+        <a href="javascript:void(0)" class="closebtn"  onclick="closeside()" >&times;</a>
+        <img src="img/head.jpg" class="head"></img>
+        <br/><br/><br/><br/><br/><br/><br/>
+        <p style="text-align: center;">JJH_QAQ</p>
+        <ul>
+        <li><a href="index.php">Home</a></li>
+        <li><a href="about.html">About me</a></li>
+        <li><a href="music.html">Music</a></li>
+        <li><a href="hometown.html">Hometown</a></li>
+        <li><a href="campus.html">Campus</a></li>
+        <li><a href="links.php">Links</a></li>
+        <div class="left-open">
+        <li ><a href="#">more</a></li>
+        <div class="left-open-content">
+            <ul>
+                <li><a href="Courses.html">picture</a></li>
+                <li><a href="books.html">picture_2</a></li>
+                <li><a href="movies.html">Movies</a></li>
+             </ul>   
+            </div>
+        </div>
+        </ul>
+        <div id="Time">
+        </div>
+    </div>
+    <div id="main">
+        <div class="Title">
+            关于我
+        </div>
+        <br/>
+        <div class="content">
+        <p class="colortext">
+        <t/>&nbsp&nbsp&nbsp&nbsp本人男，学生，3岁，啥都不会，人菜话还多。爱好敲代码<del>（虽然我有预感当我头发掉光的时候就不会有这爱好了）</del>
+        这是我本次的大作业的自我介绍页。</p>
+
+        <p id="rotetext">我测试了好几种动画，比如上边的彩色变幻字体，这一段的旋转字体，登录界面的乱七八糟动画，导航栏也是可以收缩的，头像还可以转，css是真的好玩！23333</p>
+        
+        <div class="gun">
+        <p class="dong">滚动字幕滚动字幕滚动字幕滚动字幕滚动字幕滚动字幕滚动字幕滚动字幕滚动字幕滚动字幕滚动字幕滚动字幕</p>
+        </div>
+    </div>
+
+    </div>
+
+</body>
+</html>

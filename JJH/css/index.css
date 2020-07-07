@@ -1,0 +1,285 @@
+body {
+    background-image: url("../img/background.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    /* background: linear-gradient(#141e30,#243b55); */
+    height: 100vh;
+    font-family: "Comic Sans MS",cursive, sans-serif;
+    /* font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif; */
+    }
+.div2{
+   height: 300px;
+   width: 350px;
+   background-color: rgba(0,0,0,0.6);
+   margin: 0 auto;
+   box-shadow: 0px 15px 25px 0 rgba(0,0,0,.6);
+   padding: 35px;
+   box-sizing: border-box;
+}
+h2{
+   color: white;
+   text-align: center;
+}
+p{
+   color:white;
+}
+.inputclass{
+   height: 25px;
+   margin-bottom: 40px;
+   color: turquoise;
+   position: relative;
+}
+.inputclass input{
+   color: white;
+   width: 100%;
+   height: 100%;
+   background-color: transparent;
+   border: none;
+   outline: none;
+   box-sizing: border-box;
+   padding-top: 10px;
+   border-bottom: 1px solid #14104e;
+   position: absolute; 
+   left:0px;
+   top:12px;
+}
+.inputclass .bottomline{
+    position: absolute;
+    width: 0px;
+    height: 2px;
+    left:0;
+    bottom: -10px;
+    background-color: white;
+}
+.btn{
+   /* padding: 10px 20px; */
+   overflow: hidden;
+   width:90px;
+   height: 30px;
+   outline:none;
+   border:none;
+   color: turquoise;
+   background: transparent; 
+   font-size: 1.25em;
+   position: relative;
+}
+.btn:hover{
+   background:turquoise;
+   color: white;
+   border-radius: 10px;
+   box-shadow: 0 0 5px turquoise,
+               0 0 25px turquoise,
+               0 0 50px turquoise,
+               0 0 100px turquoise;
+}
+.btn>span{
+   position: absolute;
+}
+.btn>span:nth-child(1){
+width: 100%;
+height: 2px;
+background:linear-gradient(to right,#ffffff00,turquoise);
+left:-100%;
+top:0%;
+animation: line1 1s linear infinite;
+}
+@keyframes line1{
+   50%,100%{left:100%;}
+}
+.btn>span:nth-child(2){
+   width: 2px;
+   height: 100%;
+   background:linear-gradient(to bottom,#ffffff00,turquoise);
+   right:0%;
+   top:-100%;
+   animation: line2 1s 0.25s linear infinite;
+}
+@keyframes line2{
+   50%,100%{top:100%};
+}
+.btn>span:nth-child(3){
+   width: 100%;
+   height: 2px;
+   background:linear-gradient(to left,#ffffff00,turquoise);
+   left:100%;
+   bottom: 0%;
+   animation: line3 1s 0.5s linear infinite;
+}
+@keyframes line3{
+   50%,100%{left:-100%};
+}
+.btn>span:nth-child(4){
+   width: 2px;
+   height: 100%;
+   background:linear-gradient(to top,#ffffff00,turquoise);
+   left:0%;
+   top:100%;
+   animation: line4 1s 0.75s linear infinite;
+}
+@keyframes line4{
+   50%,100%{top:-100%};
+}
+
+
+.sidenav{
+   position: fixed;
+   width: 15%;
+   height: 100%;
+   right: 0%;
+   top: 0;
+   background: linear-gradient(to bottom,rgba(0,0,0,0),rgba(0,0,0,0.3));
+   border: none;
+   transition: 1s all;
+   z-index: 1;
+   padding-top: 60px;
+}
+.sidenav .closebtn{
+   position: absolute;
+   font-size: 36px;
+   color: white;
+   right:15px;
+   top: 5px;
+   /* overflow-x: hidden; */
+}
+.sidenav ul{
+   list-style: none;
+}
+
+
+.sidenav a{
+   font-size: 25px;
+   color: white;
+   padding-left: 3px;
+   display: block;
+   text-decoration: none;
+   transition: 0.3;
+}
+.sidenav a:hover{
+   color: yellow;
+   text-decoration: underline;
+}
+.sidenav .head{
+   width: 80%;
+   position: absolute;
+   left: 10%;
+   display: block;
+   border-radius: 35px;
+   transition: 0.3s all;
+}
+.sidenav .head:hover{
+   transform:rotate(45deg);
+}
+.sidenav .left-open{
+   transition: 1s;
+}
+.sidenav .left-open-content{
+   /* list-style: none; */
+   width: 0;
+   height: 0;
+   /* border: 1px solid red; */
+   position: absolute;
+   right: 100%;
+   bottom: 5%;
+   background: linear-gradient(to top,rgba(0,0,0,0),rgba(0,0,0,0.4));;
+   transition: 0.7s all;
+}
+.sidenav .left-open:hover .left-open-content{
+   width: 100%;
+   height: 50%;
+}
+#main{
+   height: 100%;
+   width: 85%;
+   position: fixed;
+   left:0;
+   transition: 1s all; 
+}
+#main .passresult
+{
+   color:white;
+   transition: 1s all;
+   float: right;
+}
+
+#main .Title{
+   position: relative;
+   margin:0 auto;
+   width: 80%;
+   height: 100px;
+   /* border: 1px solid red; */
+   font-size: 40px;
+   color: white;
+   text-align: center;
+   background-color: rgba(0, 0, 0, 0.6);
+   border-radius: 25px;
+   box-shadow: 0 0 25px rgba(0,0,0,0.6);
+}
+#main .content{
+   margin: 0 auto;
+   width: 80%;
+   height: 80%;
+   bottom: 0;
+   position: relative;
+   /* border: 1px solid white; */
+   border-radius: 25px;
+   font-size: 25px;
+   background: rgba(0,0,0,0.6);
+   box-shadow: 0 0 25px rgba(0,0,0,0.6);
+}
+
+.content .colortext{
+   background: linear-gradient(to right,red,orange,yellow,green,blue,purple,red);
+   color:transparent;
+   background-clip: text;
+   -webkit-background-clip: text;
+   animation: ran 10s linear infinite;
+}
+@keyframes ran{
+   from{
+      background-position: 0 0;
+   }to{
+      background-position: 2000px 0;
+   }
+}
+.content #rotetext{
+   text-shadow: 0 0 25px white;
+   transition: 1s;
+}
+#Time{
+   position: absolute;
+   color:turquoise;
+   left:10%;
+   bottom: 15%;
+   width: 120px;
+}
+.linkdiv{
+   width:80%;
+   height: 20%;
+   position: absolute;
+   left: 10%;
+   top:10%;
+   /* border: 1px solid red; */
+   overflow: hidden;
+   border-radius: 25px;
+   background-color: rgba(0, 0, 0, 0.6);
+   transition: 0.3s all;
+   padding: 20px  30px 0 20px;
+}
+.botm{
+   position: absolute;
+   left:0;
+   bottom: 0;
+   height: 30px;
+   width: 100%;
+   background-color: rgba(215,221, 215, 0.6);
+   transition: 0.2s all;
+   text-align: center;
+}
+.botm:hover{
+   background-color: white;
+}
+
+.linkdiv p{
+   color: white;
+   font-size: 1.25em;
+}

@@ -1,0 +1,81 @@
+.cube{
+    position: relative;
+    /* border: 1px solid red; */
+    width: 300px;
+    height: 300px;
+    margin: 180px auto 0;
+    /* perspective: 1000px; */
+    transform-style: preserve-3d;
+    animation: roll 4s linear infinite;
+}
+@keyframes roll{
+    from{transform: rotateX(0deg) rotateY(0deg);}
+    to{transform: rotateX(360deg) rotateY(360deg);}
+}
+.cube .small{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.6);
+}
+.cube .small:nth-child(1){
+    transform: rotateX(90deg) translateZ(150px);
+    background-image: url(../img/top.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: 1s all;
+}
+.cube .small:nth-child(2){
+    transform: rotateX(-90deg) translateZ(150px);
+    background-image: url(../img/bottom.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: 1s all;
+}
+.cube .small:nth-child(3){
+    transform: rotateY(90deg) translateZ(150px);
+    background-image: url(../img/left.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: 1s all;
+}
+.cube .small:nth-child(4){
+    transform: rotateY(-90deg) translateZ(150px);
+    background-image: url(../img/right.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: 1s all;
+}
+.cube .small:nth-child(5){
+    transform: rotateX(0deg) translateZ(150px);
+    background-image: url(../img/front.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: 1s all;
+}
+.cube .small:nth-child(6){
+    transform: rotateX(180deg) translateZ(150px);
+    background-image: url(../img/before.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: 1s all;
+}
+.cube:hover .small:nth-child(1){
+    transform: rotateX(90deg) translateZ(250px);
+}
+.cube:hover .small:nth-child(2){
+    transform: rotateX(-90deg) translateZ(250px);
+}
+.cube:hover .small:nth-child(3){
+    transform: rotateY(90deg) translateZ(250px);
+}
+.cube:hover .small:nth-child(4){
+    transform: rotateY(-90deg) translateZ(250px);
+}
+.cube:hover .small:nth-child(5){
+    transform: rotateX(0deg) translateZ(250px);
+}
+.cube:hover .small:nth-child(6){
+    transform: rotateX(180deg) translateZ(250px);
+}
